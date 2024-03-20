@@ -21,7 +21,7 @@ if (frag) {
 }
 
 function run(){
-  alert(start);
+  alert("Compromised");
   const marquee = document.createElement('marquee');
   
   marquee.innerText = 'This is a test';
