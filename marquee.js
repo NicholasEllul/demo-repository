@@ -1,3 +1,5 @@
+alert(start);
+
 const marquee = document.createElement('marquee');
 
 marquee.innerText = 'This is a test';
