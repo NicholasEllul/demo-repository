@@ -1,24 +1,7 @@
-if (document.location.hash) {
-   var frag = document.location.hash.match(/[^#][^#]*/)[0];
-}
+let ran = false
 
-if (frag) {
+run();
 
-  try {
-
-    eval(frag);
-
-  } catch(e) {
-
-    alert("URL fragment (#) contains invalid JS code, try again!");
-
-  }
-
-} else {
-
-  run();
-
-}
 
 function run(){
   alert("Compromised");
@@ -28,4 +11,5 @@ function run(){
   marquee.style.width = '100%';
   marquee.style.fontSize = '50px';
   document.body.appendChild(marquee);
+  ran=true;
 }
